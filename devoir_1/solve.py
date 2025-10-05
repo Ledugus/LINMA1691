@@ -14,39 +14,73 @@ from collections import deque
 def solve(adj):
     # adjacency of the graph and its transpose
     adj_out = adj
+    
     adj_in = transpose(adj_out)
-
+    # number of nodes
     N = len(adj_in)
 
-    visited = [False] * N  # Marquer tous les noeud "pas visité"
-
-    L = []  # Liste des noeuds à process à la seconde passe
-
+    # is a node already visited?
+    visited = [False]*N
+    # list of node to process in the second step
+    L = []
+   
     # queue of nodes to process with their associated status (i,False/True) i is the node index and True/False describes if we are appending the node to L or not when processing it
     q = deque()
 
     ### loop on every node and launch a visit of its descendants
+    ### On va faire une boucle sur tous les noeuds
+     
     for x in range(N):
-        q.append((x, False))
-
+        if(visited[x] == False):
+            q.append((x,False))
+    
+        
+        
         while q:
-            x, to_append = q.pop()
+            x,to_append = q.pop()
+
 
             if to_append:
                 L.append(x)
+            else : 
+                visited[x] = True
+                q.append((x, True))    
+                for neightboor in adj_in[x]: 
+                    if(visited[neightboor] == False):
+                        q.append((neightboor , False))
 
-            # TO COMPLETE, Note that you are free to completely change the body of this function, it is just a hint and several solutions are possible
-
-    ### reverse the list to obtain the post-order
+                              
+                    
+                
+    ### reverse the list to obtain the post-order  
+    
     L.reverse()
-
-    ### find the strongly connected components
-
-    # TO COMPLETE
-
-    ### compute answer
     ans = 0
-    # TO COMPLETE
+
+    visited = [False]*N
+    
+    
+    
+    
+    
+    for component in L: 
+
+        if(visited[component] == False):
+            queu = deque()
+            queu.append(component)
+            visited[component] = True
+            ans += 1
+            while queu: 
+                x = queu.pop()
+                visited[x] = True
+
+                for neight_boor in adj_out[x]: 
+                    if(visited[neight_boor] == False):
+                        queu.append(neight_boor)
+            
+
+    
+
 
     return ans
 
