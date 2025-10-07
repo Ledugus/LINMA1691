@@ -14,73 +14,67 @@ from collections import deque
 def solve(adj):
     # adjacency of the graph and its transpose
     adj_out = adj
-    
-    adj_in = transpose(adj_out)
+
     # number of nodes
-    N = len(adj_in)
+    N = len(adj)
 
     # is a node already visited?
-    visited = [False]*N
+    visited = [False] * N
     # list of node to process in the second step
     L = []
-   
+
     # queue of nodes to process with their associated status (i,False/True) i is the node index and True/False describes if we are appending the node to L or not when processing it
     q = deque()
 
-    ### loop on every node and launch a visit of its descendants
-    ### On va faire une boucle sur tous les noeuds
-     
+    # Le but ici est de faire un tri topologique des noeuds -> DFS
+    # On ajoute les noeuds à L une fois qu'on a fini d'explorer leurs descendants
     for x in range(N):
-        if(visited[x] == False):
-            q.append((x,False))
-    
-        
-        
+        if not visited[x]:
+            q.append((x, False))
+
         while q:
-            x,to_append = q.pop()
+            x, is_done_exploring = q.pop()
 
-
-            if to_append:
+            if is_done_exploring:
                 L.append(x)
-            else : 
-                visited[x] = True
-                q.append((x, True))    
-                for neightboor in adj_in[x]: 
-                    if(visited[neightboor] == False):
-                        q.append((neightboor , False))
+                continue
+            visited[x] = True
+            q.append((x, True))
+            for neightbour in adj_out[x]:
+                if not visited[neightbour]:
+                    q.append((neightbour, False))
 
-                              
-                    
-                
-    ### reverse the list to obtain the post-order  
-    
+    # Le premier à être traité est le dernier à être ajouté,
+    # donc le dernier à avoir fini d'explorer -> il faut inverser L
     L.reverse()
     ans = 0
 
-    visited = [False]*N
-    
-    
-    
-    
-    
-    for component in L: 
+    visited = [False] * N
 
-        if(visited[component] == False):
-            queu = deque()
-            queu.append(component)
-            visited[component] = True
-            ans += 1
-            while queu: 
-                x = queu.pop()
-                visited[x] = True
+    # (Explication inspirée de https://web.stanford.edu/class/archive/cs/cs161/cs161.1138/lectures/03/Small03.pdf)
+    # On sait par la propriété du tri topologique que le dernier à être ajouté est forcément une racine d'une SCC
+    # Et que cette SCC est forcément une source dans le DAG des SCCs
+    # C'est donc une SCC optimale pour initier la rumeur
+    # On explore tous ses descendants (peut contenir plusieurs SCCs)
+    # Le prochain noeud non visité dans L est forcément la racine d'une autre SCC
+    # source dans le DAG des SCC
+    # En itérant de cette manière sur toutes les sources, on trouve le nombre
+    # minimum de noeuds nécessaires pour atteindre tous les noeuds
+    for node in L:
+        if visited[node]:
+            continue
 
-                for neight_boor in adj_out[x]: 
-                    if(visited[neight_boor] == False):
-                        queu.append(neight_boor)
-            
+        ans += 1
+        visited[node] = True
 
-    
-
+        q = deque()
+        q.append(node)
+        while q:
+            x = q.pop()
+            visited[x] = True
+            for adj in adj_out[x]:
+                if not visited[adj]:
+                    q.append(adj)
 
     return ans
 
