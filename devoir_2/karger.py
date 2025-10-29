@@ -59,6 +59,7 @@ class Union_Find:
 
 
 def min_cut(N, edges):
+    print(edges)
     """
     INPUT :
         - N the number of nodes
@@ -83,17 +84,28 @@ def min_cut(N, edges):
         See project homework for more details
         """
 
-        this_min_cut = -1
+        this_min_cut = 0
 
-        # TO COMPLETE
+        uf = Union_Find(nodes)
+        nb_successful_unions = 0
+        while nb_successful_unions < nodes - 2:
+            e = random.choice(edges)
+            u, v = e[0], e[1]
+            if uf.find(u) != uf.find(v):
+                uf.union(u, v)
+                nb_successful_unions += 1
 
+        for e in edges:
+            u, v = e[0], e[1]
+            if uf.find(u) != uf.find(v):
+                this_min_cut += 1
         return this_min_cut
 
     best_min_cut = -1
 
-    p = N * (N - 1) / 2
+    p = 1 / (N * (N - 1) / 2)
     p_value = 0.999
-    k = math.ceil(math.log((1 - p_value)) / math.log(1 - 1 / p))
+    k = math.ceil(math.log((1 - p_value)) / math.log(1 - p))
     print(k)
     for i in range(k):
         this_min_cut = karger(N, edges)
