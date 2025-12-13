@@ -1,0 +1,159 @@
+NICKNAMES = [
+    [
+        "Pavlicheff",
+    ],
+    [
+        "Epanchin",
+        "Ivan Fedorovitch",
+        "Mrs. Epanchin’s",
+        "General Epanchin",
+        "Fedor Ivanovitch Epanchin",
+        "General Ivan Fedorovitch Epanchin",
+        "the general",
+    ],
+    [
+        "Princess Bielokonski",
+        "Bielokonski",
+    ],
+    ["Alexandra Epanchin", "Alexandra", "Alexandra Ivanovna"],
+    ["Adelaida Epanchin", "Adelaida"],
+    ["Aglaya Epanchin", "Aglaya", "Aglaya Ivanovna"],
+    [
+        "Madame Epanchin",
+        "Mrs. Epanchin",
+        "Madame Epanchin’s",
+        "Elizabetha Prokofievna",
+        "Elizabetha Prokofievna Epanchin",
+        "Lizabetha Prokofievna",
+    ],
+    [
+        "Nicolai Andreevitch",
+        "Nikolai Andreevitch’s",
+        "Prince Nicolai Ivanovitch Muishkin",
+        "Prince Lef Nicolaievitch Muishkin",
+        "Prince Muishkin",
+        "Lef Nicolaievitch",
+        "prince",
+    ],
+    [
+        "Princess Muishkin",
+    ],
+    ["Nastasia", "Nastasia Philipovna", " Nastasia Philipovna Barashkoff"],
+    ["Afanasy Ivanovitch", "Totsky", "Totski’s", "Toski"],
+    [
+        "Lihachoff",
+        "Lihachov",
+    ],
+    ["Rogojin", "Parfen Rogojin", "Parfen Semeonovitch", "Parfen"],
+    ["Senka"],
+    [
+        "General Ardalion Alexandrovitch",
+        "General Ardalion",
+        "Ardalion Alexandrovitch",
+        "Ardalion Alexandrovitch Ivolgin",
+        "General Ivolgin",
+    ],
+    [
+        "Gavrila Ardalionovitch Ivolgin",
+        "Ivolgin",
+        "Gavrila Ardalionovitch",
+        "Gania",
+    ],
+    [
+        "Nina Alexandrovna",
+        "Nina",
+    ],
+    ["Varvara Alexandrovna", "Varvara", "Varvara Ardalionovna", "varia"],
+    ["Colia", " Colia Ivolgin"],
+    [
+        "Lebedeff",
+    ],
+    [
+        "Kostia Lebedeff",
+        "Kostia",
+    ],
+    [
+        "Vera Lebedeff",
+        "Vera",
+    ],
+    [
+        "Lubotchka Lebedeff",
+        "Lubotchka",
+    ],
+    [
+        "Tania",
+    ],
+    ["Lebedeff’s nephew", "Vladimir Doktorenko"],
+    [
+        "Lihachof",
+    ],
+    [
+        "Zaleshoff",
+    ],
+    [
+        "General Sokolovitch",
+        "Sokolovitch",
+    ],
+    [
+        "Madame Terentieff",
+    ],
+    [
+        "Captain Terentieff",
+    ],
+    [
+        "Captain Eropegoff",
+    ],
+    [
+        "Marfa Borisovna",
+        "Marfa",
+    ],
+    [
+        "Daria Alexeyevna",
+        "Daria",
+    ],
+    [
+        "Katia",
+    ],
+    [
+        "Salaskin",
+    ],
+    ["Lukian Timofeyovitch", "Timofeyovitch", "lukian"],
+    [
+        "Madame Filisoff",
+    ],
+    ["Prince S."],
+    ["Nil Alexeyovitch"],
+    ["Hippolyte", "Hippolyte Terentieff"],
+    ["Evgenie Pavlovitch", "Evgenie Pavlovitch Radomski"],
+    [
+        "Keller",
+    ],
+    [
+        "Zaleshoff",
+    ],
+    [
+        "Gorsky ",
+    ],
+    [
+        "Daniloff",
+    ],
+    ["Antip Burdovsky", "Burdovsky"],
+    [
+        "Doktorenko",
+    ],
+    [
+        "Tchebaroff",
+    ],
+    [
+        "Pole",
+    ],
+    ["Ferdishenko", "Fedor"],
+    [
+        "Mavra",
+    ],
+    ["Ptitsin", "Ivan Petrovitch", "Ivan Petrovitch Ptitsin"],
+    [
+        "Marie",
+    ],
+    ["Nicolai Ardalionovitch"],
+]
