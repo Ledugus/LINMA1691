@@ -20,7 +20,20 @@ def read_txt(filename):
     """Reads a text file and returns its content as a list of paragraphs."""
     with open(filename, "r") as file:
         content = file.read()
-    return content.split("\n\n")
+
+    paragraphs = content.split("\n\n")
+    merged_paragraphs = []
+
+    current_paragraph = ""
+    for paragraph in paragraphs:
+        if len(paragraph) < 1:
+            continue
+        if paragraph[0] == "“":
+            current_paragraph += " " + paragraph
+        else:
+            merged_paragraphs.append(current_paragraph)
+            current_paragraph = paragraph
+    return merged_paragraphs
 
 
 def process_paragraph(paragraph, nickname_list):
@@ -72,17 +85,18 @@ def nodes_from_nicknames():
 
 if __name__ == "__main__":
     paragraphs = read_txt("devoir_4/book.txt")
+    n = 500
+    for i in range(n, n + 20):
+        print(paragraphs[i])
     print(len(paragraphs), "paragraphs found in the book.")
 
     nickname_dict = process_nicknames(NICKNAMES)
-    print(len(nickname_dict), "nicknames processed.")
-    print(nickname_dict)
     clusters = [process_paragraph(paragraph, nickname_dict) for paragraph in paragraphs]
 
     edge_list = np.array(edges_from_clusters(clusters))
     print(len(edge_list), "edges found in the book.")
 
-    nodes_from_nicknames()
+    # nodes_from_nicknames()
     np.savetxt("devoir_4/edge_list.csv", edge_list, delimiter=";", fmt="%d")
 
     adj = adj_from_clusters(clusters)

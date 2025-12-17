@@ -33,6 +33,8 @@ NICKNAMES = [
         "Prince Lef Nicolaievitch Muishkin",
         "Prince Muishkin",
         "Lef Nicolaievitch",
+        "the prince",
+        "The prince",
         "prince",
     ],
     [
@@ -42,6 +44,7 @@ NICKNAMES = [
     ["Afanasy Ivanovitch", "Totsky", "Totski’s", "Toski"],
     [
         "Lihachoff",
+        "Lihachof",
         "Lihachov",
     ],
     ["Rogojin", "Parfen Rogojin", "Parfen Semeonovitch", "Parfen"],
@@ -84,12 +87,6 @@ NICKNAMES = [
         "Tania",
     ],
     ["Lebedeff’s nephew", "Vladimir Doktorenko"],
-    [
-        "Lihachof",
-    ],
-    [
-        "Zaleshoff",
-    ],
     [
         "General Sokolovitch",
         "Sokolovitch",
