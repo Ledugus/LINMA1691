@@ -1,0 +1,53 @@
+Id;Label;modularity_class;eigencentrality;gender;stat_inf_class;Degree;Weighted Degree;famille;Modularity Class_0,5;Modularity Class_0,05;Modularity Class_1;Modularity Class_2
+0;Pavlicheff;0;0.671154;M;11;22;134;1;3;9;0;0
+1;General Ivan Fedorovitch Epanchin;0;0.982013;M;1;44;1103;Epanchin;1;0;0;0
+6;Elizabetha Prokofievna Epanchin;0;0.835676;F;7;33;664;Epanchin;1;1;1;0
+7;Prince Nicolai Ivanovitch Muishkin;0;1;M;3;47;1894;Muishkin;1;2;0;0
+8;Princess Muishkin;0;0.143861;M;7;4;4;Muishkin;1;3;0;0
+12;Parfen Semeonovitch;0;0.829082;M;0;34;489;Rogojin;2;3;0;0
+9;Nastasia Philipovna Barashkoff;0;0.81608;F;9;34;643;24;2;4;0;0
+10;Afanasy Ivanovitch;0;0.39871;F;5;15;71;25;2;4;0;0
+11;Lihachoff;0;0.21505;M;5;8;8;26;2;3;0;0
+13;Senka;0;0.21505;M;5;8;8;Rogojin;2;3;0;0
+19;Lebedeff;0;0.926883;M;16;41;657;Lebedeff;3;5;0;0
+40;Zaleshoff;0;0.256075;M;5;10;29;13;2;3;0;0
+47;Ferdishenko;0;0.902298;M;4;35;342;19;2;6;0;0
+3;Alexandra Epanchin;0;0.623911;F;9;22;212;Epanchin;0;7;1;0
+4;Adelaida Epanchin;0;0.625132;F;15;21;234;Epanchin;0;7;1;0
+5;Aglaya Epanchin;0;0.830093;F;19;30;681;Epanchin;1;8;1;0
+15;Gavrila Ardalionovitch Ivolgin;0;0.916017;M;6;38;870;Ivolgin;4;9;0;0
+16;Nina Alexandrovna;0;0.661118;F;10;22;188;Ivolgin;4;0;0;0
+14;General Ardalion Alexandrovitch;0;0.784731;M;12;29;203;Ivolgin;4;11;0;0
+17;Varvara Alexandrovna;0;0.63952;F;13;20;119;Ivolgin;4;10;0;0
+49;Ivan Petrovitch Ptitsin;0;0.741676;M;20;26;362;21;4;10;0;0
+48;Mavra;0;0.171069;F;7;5;5;20;1;6;1;0
+2;Princess Bielokonski;0;0.512524;F;11;17;101;Epanchin;1;2;1;0
+50;Marie;0;0.227008;F;12;7;9;22;0;2;1;0
+18;Colia Ivolgin;0;0.917387;M;14;38;500;Ivolgin;4;12;0;0
+46;Pole;0;0.141398;M;0;4;4;18;4;3;0;0
+25;General Sokolovitch;0;0.340457;M;8;12;19;2;5;13;0;0
+26;Madame Terentieff;0;0.281465;F;8;10;19;Terentieff;5;13;0;0
+27;Captain Terentieff;0;0.251833;M;8;9;9;Terentieff;5;13;0;0
+29;Marfa Borisovna;0;0.281465;F;8;10;26;4;5;13;0;0
+37;Hippolyte Terentieff;0;0.836613;M;8;32;394;Terentieff;3;14;0;0
+30;Daria Alexeyevna;0;0.512244;F;2;18;69;Alexey;2;4;0;0
+31;Katia;0;0.32741;F;5;11;29;6;2;3;0;0
+32;Salaskin;0;0.297226;M;20;9;23;7;2;2;0;0
+38;Evgenie Pavlovitch Radomski;0;0.775316;M;17;27;429;11;0;8;1;0
+21;Vera Lebedeff;0;0.654792;F;13;23;135;Lebedeff;3;5;0;0
+22;Lubotchka Lebedeff;0;0.23909;M;12;8;11;Lebedeff;3;5;0;0
+23;Tania;0;0.111584;F;12;4;4;Lebedeff;3;5;0;0
+33;Lukian Timofeyovitch;0;0.434621;M;2;15;28;8;3;12;0;0
+36;Nil Alexeyovitch;0;0.202307;M;2;7;7;Alexey;3;12;0;0
+51;Nicolai Ardalionovitch;0;0.504581;M;2;17;29;Ivolgin;3;12;0;0
+39;Keller;0;0.752161;M;10;28;174;12;3;16;0;0
+24;Vladimir Doktorenko;0;0.633027;M;18;21;88;Lebedeff;3;14;0;0
+34;Madame Filisoff;0;0.071812;F;9;2;2;9;2;2;0;0
+35;Prince S.;0;0.666141;M;15;22;218;10;0;1;1;0
+41;Gorsky;0;0.076034;M;7;3;3;14;3;15;1;0
+42;Daniloff;0;0.160364;M;7;6;7;15;3;15;1;0
+43;Antip Burdovsky;0;0.83015;M;18;30;213;16;3;16;0;0
+44;Doktorenko;0;0.616767;M;19;20;56;Lebedeff;3;6;0;0
+45;Tchebaroff;0;0.514068;M;17;16;37;17;3;9;0;0
+20;Kostia Lebedeff;0;0.356638;M;4;11;20;Lebedeff;3;12;0;0
+28;Captain Eropegoff;0;0.172746;M;20;5;9;3;4;12;0;0
